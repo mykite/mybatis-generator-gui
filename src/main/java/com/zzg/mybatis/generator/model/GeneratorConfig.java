@@ -37,6 +37,8 @@ public class GeneratorConfig {
 
     private boolean comment;
 
+	private boolean example;
+
     public String getName() {
         return name;
     }
@@ -140,4 +142,12 @@ public class GeneratorConfig {
     public void setComment(boolean comment) {
         this.comment = comment;
     }
+
+	public void setExample(boolean example) {
+		this.example = example;
+	}
+	
+	public boolean isExample() {
+		return example;
+	}
 }
