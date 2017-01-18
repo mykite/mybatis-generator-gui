@@ -60,6 +60,9 @@ public class MainUIController extends BaseFXController {
     private CheckBox offsetLimitCheckBox;
     @FXML
     private CheckBox commentCheckBox;
+    
+    @FXML
+    private CheckBox exampleCheckBox;
 
     @FXML
     private TreeView<String> leftDBTree;
@@ -257,6 +260,7 @@ public class MainUIController extends BaseFXController {
         generatorConfig.setDomainObjectName(domainObjectNameField.getText());
         generatorConfig.setOffsetLimit(offsetLimitCheckBox.isSelected());
         generatorConfig.setComment(commentCheckBox.isSelected());
+        generatorConfig.setExample(exampleCheckBox.isSelected());
         return generatorConfig;
     }
 
